@@ -7,5 +7,6 @@
  * @Createdate Thu, 12 Sep 2013 04:07:53 GMT
  */
 
+ echo 'Xin chào';
 
 ?>
