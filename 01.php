@@ -9,6 +9,6 @@
 
  echo 'Xin chào';
 
-echo 'Test'
+echo 'Test';
 
 ?>
