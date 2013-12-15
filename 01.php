@@ -9,4 +9,6 @@
 
  echo 'Xin chào';
 
+echo 'Test';
+
 ?>
