@@ -24,14 +24,20 @@ $array[] = array(
 	'date' => '20/11/2010'
 );
 
+$array2 = array( );
+
 $xtpl = new XTemplate( 'list.html' );
-foreach( $array as $value )
+if( ! empty( $array ) )
 {
-	$xtpl->assign( 'DATA', $value );
-	$xtpl->parse( 'main.loop' );
+	foreach( $array as $value )
+	{
+		$xtpl->assign( 'DATA', $value );
+		$xtpl->parse( 'main.table.loop' );
+	}
+	$xtpl->parse( 'main.table' );
 }
 $xtpl->parse( 'main' );
-$cont = $xtpl->text('main');
+$cont = $xtpl->text( 'main' );
 
-echo 'Thực hiên' .$cont;
+echo 'Thực hiên' . $cont;
 ?>
